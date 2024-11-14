@@ -1,0 +1,91 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./public/assets/images/cake-1114056_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card styling */
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+}
+
+/* Confetti container */
+.confetti-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Photo styling */
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #e91e63;
+    position: relative;
+    z-index: 1;
+}
+
+/* Confetti Styling */
+.confetti {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #e91e63;
+    border-radius: 50%;
+    animation: confetti-fall 3s linear infinite;
+    opacity: 0.8;
+}
+
+/* Keyframes for confetti falling effect */
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Different colors and positions for confetti */
+.confetti:nth-child(1) { background-color: #ffeb3b; left: 10%; animation-delay: 0s; }
+.confetti:nth-child(2) { background-color: #8bc34a; left: 25%; animation-delay: 0.5s; }
+.confetti:nth-child(3) { background-color: #ff5722; left: 40%; animation-delay: 1s; }
+.confetti:nth-child(4) { background-color: #00bcd4; left: 60%; animation-delay: 1.5s; }
+.confetti:nth-child(5) { background-color: #9c27b0; left: 75%; animation-delay: 2s; }
+.confetti:nth-child(6) { background-color: #3f51b5; left: 90%; animation-delay: 2.5s; }
+.confetti:nth-child(7) { background-color: #f44336; left: 5%; animation-delay: 1.2s; }
+.confetti:nth-child(8) { background-color: #4caf50; left: 95%; animation-delay: 1.7s; }
+
+/* Heading and paragraph styling */
+h1 {
+    color: #e91e63;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#salutation {
+    font-size: 2rem;
+    font-weight: 600;
+}
